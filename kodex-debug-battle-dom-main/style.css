@@ -21,7 +21,7 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--bg);
     color: var(--text-primary);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     padding: 4rem 1rem; /* More top/bottom padding */
@@ -154,7 +154,7 @@ header {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 340px); /* Increased available height for list */
+    height: calc(100vh - 440px); /* Increased available height for list */
 }
 
 .section-header {
@@ -273,7 +273,7 @@ header {
     visibility: hidden;
     transition: opacity 0.2s;
     /* BUG #10: Z-index too low */
-    z-index: 10;
+    z-index: 1000;
 }
 
 .modal-overlay.active {
